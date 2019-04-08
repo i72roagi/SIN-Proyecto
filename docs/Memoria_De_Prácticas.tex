@@ -1,0 +1,55 @@
+\documentclass[14pt]{extarticle}
+\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{enumerate} 
+\usepackage{fancyhdr}
+\usepackage{graphicx} 
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+
+\geometry{a4paper, left = 2.5cm, right = 2.5cm, top = 2cm, bottom = 2cm, hcentering = true}
+
+\pagestyle{fancy}
+
+\lhead{Inferencia con lógica de predicados}
+\chead{}
+\rhead{Sección \thesection}
+\rfoot{Página \thepage}
+\lfoot{Sistemas Inteligentes}
+\cfoot{}
+
+\begin{document}
+
+\begin{titlepage}
+
+	\begin{figure}[htb]
+		\includegraphics[width = 4cm]{images/logo_uco.png}
+	\end{figure}
+
+	\begin{center}
+		\vspace{4cm}
+		\LARGE{Proyecto de prácticas de Sistemas Inteligentes} \\
+		\vspace{1cm}
+		\large{Manuel Jesús Mariscal Romero, 45887907D\\
+			Iván Rodríguez Aguayo, 45945058M}
+	\end{center}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Problema a resolver}
+\textbf{Sistema de ayuda a la decisión para: Mantener el peso.}
+\vspace{4pt} \\
+El problema que tenemos que resolver es un sistema de ayuda para regular tu peso. El usuario introduce varios parámetros, como
+pueden ser los hábitos de alimentación, su forma de vida, etc, y si desea mantener, ganar o perder peso. \\ Basándose en eso, el sistema
+decide si está manteniendo, ganando o perdiendo peso y le da algunos consejos para lograr su objetivo.
+\section{Estrategia}
+
+\addcontentsline{toc}{section}{Bibliografía}
+\bibliographystyle{acm}
+\bibliography{biblio}
+
+\end{document}
