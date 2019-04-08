@@ -1,4 +1,4 @@
-(defrule start_and_load
+(defrule start_and_load ; Esta función se ejecuta primero debido a la prioridad, y carga los demás archivos .clp
 	(declare (salience 1000))
 =>
 	(load variables.clp)
