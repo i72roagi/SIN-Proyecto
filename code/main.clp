@@ -23,5 +23,5 @@
 (defrule introduce_datos
 	(declare (salience 10))
 =>
-	(printout t "Se le realizará un test con el fin de conocer los causantes de su peso y decidir qué necesita para lograr su objetivo" crlf "Si no desea responder alguna pregunta, introduzca una opción no válida" crlf crlf)
+	(printout t "Se le realizará un test con el fin de conocer los causantes de su peso y decidir qué necesita para lograr su objetivo" crlf crlf)
 )

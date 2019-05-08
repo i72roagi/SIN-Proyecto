@@ -1,56 +1,62 @@
-(defrule introduce_sexo
-	(declare (salience 3))
-=>
-	(printout t "Introduzca su sexo, siendo posibles 'hombre' o 'mujer'" crlf)
-	(assert (sexo (read)))
-	(cls)
-)
-
-(defrule introduce_edad
+(defrule introduce_peso
 	(declare (salience 2))
 =>
-	(printout t "Introduzca su edad, en cifras" crlf)
-	(assert (edad (read)))
+	(printout t "" crlf)
+	(assert (peso (read)))
 	(cls)
 )
 
-(defrule introduce_enfermedad
+(defrule introduce_altura
 	(declare (salience 1))
 =>
-	(printout t "¿Padece de alguna enfermedad, como 'hipertiroidismo' o 'hipotiroidismo'?" crlf)
-	(assert (enfermedad (read)))
+	(printout t "" crlf)
+	(assert (altura (read)))
 	(cls)
 )
 
-(defrule introduce_alimenticio
+(defrule introduce_proteinas
 =>
-	(printout t "Introduzca su tipo de alimentación, siendo 1 comida basura y 9 dieta sana" crlf)
-	(assert (alimentacion (read)))
+	(printout t "Valora la alimentación que lleves, siendo 1 poco saludable y 9 muy saludable" crlf)
+	(assert (proteinas (read)))
 	(cls)
 )
 
-(defrule introduce_modo_vida
+(defrule introduce_hidratos
 =>
-	(printout t "Introduzca su modo de vida, siendo 1 vida sedentaria y 9 deportista de élite" crlf)
-	(assert (vida (read)))
+	(printout t "" crlf)
+	(assert (hidratos (read)))
 	(cls)
 )
 
-(defrule introduce_gases
+(defrule introduce_lipidos
 =>
-	(printout t "Introduzca su habitualidad al tomar bebidas alcohólicas y/o con gases, siendo 1 nada habitual  y 9  muy habitual" crlf)
-	(assert (gases (read)))
+	(printout t "¿Con qué frecuencia suele tomar dulces o alimentos hipercalóricos?, siendo 1 poco habitual y 9 muy habitual" crlf)
+	(assert (lipidos (read)))
 	(cls)
 )
 
-(defrule calcular_suma
-	?al <- (alimentacion ?alimentacion&:(numberp ?alimentacion))
-	?ga <- (gases ?gases&:(numberp ?gases))
-	?vi <- (vida ?vida&:(numberp ?vida))
+(defrule introduce_deporte
 =>
-	(bind ?suma (+ ?alimentacion ?gases ?vida))
-	(retract ?al ?ga ?vi)
-	(assert (resultados ?suma))
+	(printout t "¿Con qué frecuencia suele realizar deporte?, siendo 1 poco frecuente y 9 muy frecuente" crlf)
+	(assert (deporte (read)))
+	(cls)
+)
+
+(defrule calcular_alimentacion
+	(hidratos ?hidratos&:(numberp ?hidratos))
+	(proteinas ?proteinas&:(numberp ?proteinas))
+	(lipidos ?lipidos&:(numberp ?lipidos))
+=>
+	(bind ?alimentacion (+ (* ?hidratos * 0.5) (* ?lipidos 0.35) (* ?proteinas 0.15)))
+	(assert (alimentacion ?alimentacion))
+)
+
+(defrule calcular_imc
+	(peso ?peso&:(numberp ?peso))
+	(altura ?altura&:(numberp ?altura))
+=>
+	(bind ?imc (/ ?peso (sqrt ?altura)))
+	(assert (imc ?imc))
 )
 
 (defrule imprime_resultados
