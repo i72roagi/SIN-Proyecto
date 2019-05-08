@@ -1,7 +1,9 @@
 (defrule start_and_load ; Esta función se ejecuta primero debido a la prioridad, y carga los demás archivos .clp
 	(declare (salience 1000))
 =>
-	(load hechos.clp)
+	(load mantener_peso.clp)
+	(load ganar_peso.clp)
+	(load perder_peso.clp)
 	(load reglas.clp)
 	(retract *)
 )
