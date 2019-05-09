@@ -5,10 +5,10 @@
 	(imc ?imc)
 =>
 	(if (>= ?imc 25) then
-		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC un poco alto, para poder mantener peso debería aumentar un poco la cantidad de alimentos que toma, una subida de alrededor de 200KCal. Igualmente, realiza poco deporte, debería aumentar la cantidad de deporte, y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC un poco alto, para poder mantener peso debería mantener su buena alimentación, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza poco deporte, debería aumentar la cantidad con moderación, para ejercitar tu cuerpo y mantener su peso actual."))
 	
 	else 
-		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC normal, para poder mantener peso debería aumentar un poco la cantidad de alimentos que toma, una subida de alrededor de 100KCal. Igualmente, realiza poco deporte, debería aumentar la cantidad de deporte, y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC normal, para poder mantener peso debería mantener su buena alimentación, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza poco deporte, debería aumentar la cantidad con moderación, para ejercitar tu cuerpo y mantener su peso actual."))
 	)
 )
 
@@ -19,10 +19,10 @@
 	(imc ?imc)
 =>
 	(if (>= ?imc 25) then
-		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC un poco alto, para poder mantener peso debería aumentar un poco la cantidad de alimentos que toma, una subida de alrededor de 300KCal. Igualmente, realiza deporte con moderación, debería enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC un poco alto, para poder mantener peso debería mantener su buena alimentación, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza deporte con moderación, debería seguir realizándolo sin problema, y si viera que su peso desciende, baje la cantidad de deporte que realize."))
 	
 	else 
-		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC normal, para poder mantener peso debería aumentar un poco la cantidad de alimentos que toma, una subida de alrededor de 200KCal. Igualmente, realiza deporte con moderación, debería enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC normal, para poder mantener peso debería mantener su buena alimentación, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza deporte con moderación, debería seguir realizándolo sin problema, y si viera que su peso desciende, baje la cantidad de deporte que realize."))
 	)
 )
 
@@ -33,10 +33,10 @@
 	(imc ?imc)
 =>
 	(if (>= ?imc 25) then
-		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC un poco alto, para poder mantener peso debería aumentar un poco la cantidad de alimentos que toma, una subida de alrededor de 400KCal. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte, ya que tendrá el efecto contrario a lo que desea, y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC un poco alto, para poder mantener peso debería mantener su buena alimentación, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte lo suficiente hasta una cantidad normal."))
 	
 	else 
-		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC normal, para poder mantener peso debería aumentar un poco la cantidad de alimentos que toma, una subida de alrededor de 300KCal. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte, ya que tendrá el efecto contrario a lo que desea, y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación buena y tiene un IMC normal, para poder mantener peso debería mantener su buena alimentación, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte lo suficiente hasta una cantidad normal."))
 	)
 )
 
@@ -47,10 +47,10 @@
 	(imc ?imc)
 =>
 	(if (>= ?imc 25) then
-		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC un poco alto, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, y si le hiciera falta aumentar la cantidad ingerida unas 400KCal. Igualmente, realiza poco deporte, debería aumentar la cantidad de deporte y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC un poco alto, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza poco deporte, debería aumentar la cantidad con moderación, para ejercitar tu cuerpo y mantener su peso actual."))
 	
 	else 
-		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC normal, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, y si le hiciera falta aumentar la cantidad ingerida unas 300KCal. Igualmente, realiza poco deporte, debería aumentar la cantidad de deporte y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC normal, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza poco deporte, debería aumentar la cantidad con moderación, para ejercitar tu cuerpo y mantener su peso actual."))
 	)
 )
 
@@ -61,10 +61,10 @@
 	(imc ?imc)
 =>
 	(if (>= ?imc 25) then
-		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC un poco alto, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, y si le hiciera falta aumentar la cantidad ingerida unas 300KCal. Igualmente, realiza deporte con moderación, debería enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC un poco alto, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza deporte con moderación, debería seguir realizándolo sin problema, y si viera que su peso desciende, baje la cantidad de deporte que realize."))
 	
 	else 
-		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC normal, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, y si le hiciera falta aumentar la cantidad ingerida unas 200KCal. Igualmente, realiza deporte con moderación, debería enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC normal, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza deporte con moderación, debería seguir realizándolo sin problema, y si viera que su peso desciende, baje la cantidad de deporte que realize."))
 	)
 )
 
@@ -75,9 +75,9 @@
 	(imc ?imc)
 =>
 	(if (>= ?imc 25) then
-		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC un poco alto, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, y si le hiciera falta aumentar la cantidad ingerida unas 200KCal. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte, ya que tendrá el efecto contrario a lo que desea, y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC un poco alto, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte lo suficiente hasta una cantidad normal."))
 	
 	else 
-		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC normal, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, y si le hiciera falta aumentar la cantidad ingerida unas 100KCal. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte, ya que tendrá el efecto contrario a lo que desea, y enfocarlo a la musculación, para aumentar la cantidad de músculo y reducir la grasa."))
+		(assert (resultados "Usted tiene una alimentación mala y tiene un IMC normal, para poder mantener peso debería mejorar su dieta, comiendo más equilibrado, sin realizar excesos de comida e intentando evitar cualquier alimento hipercalórico. Igualmente, realiza mucho deporte, debería rebajar la cantidad de deporte lo suficiente hasta una cantidad normal."))
 	)
 )
